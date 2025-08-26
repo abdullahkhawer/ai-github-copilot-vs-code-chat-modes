@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2025-08-26
+
+### 🚀 Features
+
+- Develop chat mode for Conversation to Chat Mode
+- Develop chat mode for Dockerfile Developer
+- Improve content of Terraform Helm Release Upgrade Analyser chat mode
+
+### 📚 Documentation
+
+- Update README with new chat modes and improve content
+
+### ⚙️ Miscellaneous Tasks
+
+- Ignore .DS_Store file for git
+
 ## [1.0.0] - 2025-08-26
 
 ### 🚀 Features
