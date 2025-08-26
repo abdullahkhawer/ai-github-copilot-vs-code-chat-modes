@@ -39,6 +39,10 @@ This chat mode helps you safely upgrade Helm releases managed by Terraform by:
 - **Breaking Change Analysis**: Identifies potential breaking changes and compatibility issues
 - **Detailed Planning**: Creates comprehensive upgrade plans with step-by-step instructions
 
+#### Demo
+
+![Demo](demos/terraform-helm-release-upgrade-analyser.chatmode.gif)
+
 #### Example Usage
 
 To use this chat mode effectively, follow these steps:
@@ -53,7 +57,7 @@ To use this chat mode effectively, follow these steps:
 3. Select `Claude Sonnet 4` as the model
 4. Choose the directory containing your Terraform code for the Helm release as the context
 
-##### Usage Example
+##### Prompt Example
 
 ```
 Analyze my Helm chart upgrade plan.
