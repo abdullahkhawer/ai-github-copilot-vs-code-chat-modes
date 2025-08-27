@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2025-08-27
+
+### 🐛 Bug Fixes
+
+- Improve the quality of .gif files.
+
 ## [1.1.0] - 2025-08-26
 
 ### 🚀 Features
