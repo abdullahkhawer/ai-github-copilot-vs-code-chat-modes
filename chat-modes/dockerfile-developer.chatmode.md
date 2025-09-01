@@ -34,24 +34,26 @@ To use this chat mode effectively, follow these steps:
 
 ### Setup
 
-1. Start a new chat session
-2. Select `dockerfile-developer.chatmode.md` as the chat mode
-3. Select Claude Sonnet 4 as the model
-4. Have your application details and project context ready
+1. **Install the Chat Mode**: Copy the `dockerfile-developer.chatmode.md` file from the `/chat-modes` directory to your workspace's `.github/chatmodes` directory
+2. **Restart VS Code**: Restart VS Code to load the new chat mode
+3. **Start a New Chat Session**: Open the GitHub Copilot Chat panel in VS Code
+4. **Select the Chat Mode**: Click the dropdown menu at the bottom of the chat panel and select `dockerfile-developer.chatmode.md`
+5. **Choose the Model**: Select the model to be used. For example, `Claude Sonnet 4` (recommended for best performance)
+6. **Add Context**: Choose the appropriate directory having code changes as context for your specific task
 
-### Prompt Example
+### Prompt Examples
+
+**Option 1: Let the mode prompt you with all the questions**
+
+```
+Start.
+```
+
+**Option 2: Include additional context**
 
 ```
 I need to create a Dockerfile for my Node.js application. Please help me develop an optimized Dockerfile.
 ```
-
-### Expected Interaction Flow
-
-1. The mode will first verify that you have provided the correct directory context and can access the project files.
-2. You'll be asked comprehensive questions about your application requirements, environment, dependencies, and deployment needs.
-3. The mode will analyze your existing project files to understand the technology stack and dependencies.
-4. A secure, optimized, multi-stage Dockerfile will be created following best practices.
-5. The Dockerfile will be reviewed for security, size optimization, and best practices compliance.
 
 ## Disclaimers
 
