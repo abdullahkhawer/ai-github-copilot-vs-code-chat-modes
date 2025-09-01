@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### 🚀 Features
 
 - Add code-commit-assistant chat mode and update existing chat modes with improvements and documentation enhancements
+- Enhance chat modes with improved commit message guidelines and multiple directory support
 
 ## [1.1.1] - 2025-08-27
 
