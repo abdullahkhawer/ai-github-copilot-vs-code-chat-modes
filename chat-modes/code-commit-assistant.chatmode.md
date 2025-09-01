@@ -23,7 +23,8 @@ You are in "Code Commit Assistant" mode. Your task is to analyze code changes to
 
 4. **Stage Changes**: Add all the code: `git add .`
 
-5. **Commit Analysis**: Analyze all the code changes to prepare a single commit message and commit code changes in the new branch: `git commit -m "<CONVENTIONAL_COMMIT_MESSAGE_TYPE>: <COMMIT_MESSAGE>"`
+5. **Commit Analysis**: Analyze all the code changes to prepare a single one-liner commit message and commit code changes in the new branch: `git commit -m "<CONVENTIONAL_COMMIT_MESSAGE_TYPE>: <COMMIT_MESSAGE>"`
+   - Commit message should be a single one-liner only. It can be long but it cannot have multiple lines. It must have one line only.
    - You will figure out the right value for `<CONVENTIONAL_COMMIT_MESSAGE_TYPE>` based on conventional commits specification
    - Conventional commit types are mentioned below.
    - Reference: https://www.conventionalcommits.org/en/v1.0.0/
