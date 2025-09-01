@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2025-09-01
+
+### 🚀 Features
+
+- Add code-commit-assistant chat mode and update existing chat modes with improvements and documentation enhancements
+
 ## [1.1.1] - 2025-08-27
 
 ### 🐛 Bug Fixes
