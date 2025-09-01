@@ -31,6 +31,7 @@ The chat mode will now be active, and Copilot Chat will respond according to the
 | [Terraform Helm Release Upgrade Analyser](chat-modes/terraform-helm-release-upgrade-analyser.chatmode.md) | Creates a detailed upgrade plan for a Helm release created via Terraform by analysing the configuration differences between the current and desired Helm chart versions and any breaking changes | Infrastructure & DevOps |
 | [Dockerfile Developer](chat-modes/dockerfile-developer.chatmode.md) | Develops optimized, secure, and best-practice Dockerfiles based on user requirements and application context | Infrastructure & DevOps |
 | [Conversation to Chat Mode](chat-modes/conversation-to-chat-mode.chatmode.md) | Creates a custom chat mode file based on a conversational interface where users describe their specific task requirements and guidelines | Development Tools |
+| [Code Commit Assistant](chat-modes/code-commit-assistant.chatmode.md) | Analyzes code changes, prepares conventional commit messages, and commits to a new branch with proper Git workflow automation | Development Tools |
 
 ## Terraform Helm Release Upgrade Analyser
 
@@ -44,30 +45,6 @@ This chat mode helps you safely upgrade Helm releases managed by Terraform by:
 ### Demo
 
 ![Demo](demos/terraform-helm-release-upgrade-analyser.chatmode.gif)
-
-### Example Usage
-
-To use this chat mode effectively, follow these steps:
-
-### Prerequisites
-
-1. Ensure you have Terraform code that contains a Helm release resource
-2. Know the current and desired Helm chart versions for your upgrade
-
-### Setup
-
-1. Start a new chat session
-2. Select `terraform-helm-release-upgrade-analyser.chatmode.md` as the chat mode
-3. Select `Claude Sonnet 4` as the model
-4. Choose the directory containing your Terraform code for the Helm release as the context
-
-### Prompt Example
-
-```
-Analyze my Helm chart upgrade plan.
-Current Helm chart version: 4.12.3
-Desired Helm chart version: 4.13.1
-```
 
 ## Dockerfile Developer
 
@@ -83,27 +60,6 @@ This chat mode helps you create optimized, secure, and production-ready Dockerfi
 
 ![Demo](demos/dockerfile-developer.chatmode.gif)
 
-### Example Usage
-
-To use this chat mode effectively, follow these steps:
-
-### Prerequisites
-- Have your application project ready in a specific directory
-- Know your application type and technology stack  
-- Have access to dependency files if they exist
-
-### Setup
-1. Start a new chat session
-2. Select `dockerfile-developer.chatmode.md` as the chat mode
-3. Select `Claude Sonnet 4` as the model
-4. Have your application details and project context ready
-
-### Prompt Example
-
-```
-I need to create a Dockerfile for my Node.js application. Please help me develop an optimized Dockerfile.
-```
-
 ## Conversation to Chat Mode
 
 This meta chat mode helps you create new custom chat modes through a guided conversation by:
@@ -117,26 +73,58 @@ This meta chat mode helps you create new custom chat modes through a guided conv
 
 ![Demo](demos/conversation-to-chat-mode.chatmode.gif)
 
-### Example Usage
+## Code Commit Assistant
 
-To use this chat mode effectively, follow these steps:
+This chat mode helps you automate your Git workflow by analyzing code changes and creating proper commits by:
 
-### Prerequisites
+- **Automatic Code Analysis**: Analyzes all uncommitted changes to understand the scope and impact of modifications
+- **Conventional Commits**: Automatically determines the appropriate conventional commit type (feat, fix, docs, etc.) based on code changes
+- **Branch Management**: Creates new branches for your changes following Git best practices
+- **Quality Checks**: Optionally runs pre-commit hooks and Terraform formatting before committing
+- **Automated Workflow**: Handles the complete Git workflow from branch creation to pushing changes
 
-1. Have a clear idea of what specific task or problem you want your custom chat mode to solve
-2. Think about the specific instructions and guidelines needed for that task
+### Demo
 
-### Setup
+![Demo](demos/code-commit-assistant.chatmode.gif)
 
-1. Start a new chat session
-2. Select `conversation-to-chat-mode.chatmode.md` as the chat mode
-3. Select `Claude Sonnet 4` as the model
+# 📖 How to Use Chat Modes
 
-### Prompt Example
+To use any of these custom chat modes effectively, follow these general steps:
+
+## Prerequisites
+
+- Ensure you have the necessary files, projects, or context ready for the specific chat mode you want to use
+- Understand the specific requirements for your chosen chat mode by checking the chat mode file.
+
+## Setup
+
+1. **Install the Chat Mode**: Copy the desired `.chatmode.md` file from the `/chat-modes` directory to your workspace's `.github/chatmodes` directory
+2. **Restart VS Code**: Restart VS Code to load the new chat mode
+3. **Start a New Chat Session**: Open the GitHub Copilot Chat panel in VS Code
+4. **Select the Chat Mode**: Click the dropdown menu at the bottom of the chat panel and select your custom chat mode
+5. **Choose the Model**: Select the model to be used. For example, `Claude Sonnet 4` (recommended for best performance)
+6. **Add Context**: Choose the appropriate directory or files as context for your specific task
+
+## Prompt Example
+
+### Simple Start Command
+
+For most chat modes, you can simply use:
 
 ```
-Let's have a conversation to build a custom chat mode file.
+Start.
 ```
+
+This will prompt the chat mode to guide you through any necessary questions or steps.
+
+## Tips for Best Results
+
+- Always select the appropriate directory or files as context for your task
+- Use `Claude Sonnet 4` model for optimal performance
+- Be specific about your requirements when the chat mode asks for clarification
+- Ensure you have the necessary permissions and prerequisites before starting
+
+**Note: For more details about usage around prerequisites, setup and prompt examples, refer to the chosen custom chat mode's `.chatmode.md` file.**
 
 # 🤝 Contributing
 
