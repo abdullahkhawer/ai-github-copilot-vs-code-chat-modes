@@ -2,12 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.2.0] - 2025-09-01
+## [1.2.0] - 2025-09-09
 
 ### 🚀 Features
 
 - Add code-commit-assistant chat mode and update existing chat modes with improvements and documentation enhancements
 - Enhance chat modes with improved commit message guidelines and multiple directory support
+
+### 📚 Documentation
+
+- Remove redundant setup sections from chat modes and simplify README getting started section, add GitLab fallback for Terraform Helm analyser
 
 ## [1.1.1] - 2025-08-27
 
