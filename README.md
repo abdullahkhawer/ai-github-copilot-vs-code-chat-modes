@@ -13,17 +13,6 @@ Custom chat modes allow you to modify GitHub Copilot's behavior in VS Code. Each
 - [GitHub Copilot Chat](https://code.visualstudio.com/docs/copilot/chat/copilot-chat)
 - [Custom Chat Modes](https://code.visualstudio.com/docs/copilot/chat/chat-modes#_custom-chat-modes)
 
-# Getting Started
-
-To use any of these custom chat modes:
-
-1. Copy the desired `.chatmode.md` file from the `/chat-modes` directory in this repository to your workspace's `.github/chatmodes` directory (create it if it doesn't exist).
-2. Restart VS Code to load the new chat mode.
-3. Open the GitHub Copilot Chat panel in VS Code.
-4. Click the dropdown menu at the bottom of the chat panel and select your custom chat mode from the list.
-
-The chat mode will now be active, and Copilot Chat will respond according to the instructions defined in the chosen `.chatmode.md` file.
-
 # 🚀 Available Chat Modes
 
 | Title | Description | Category |
@@ -124,7 +113,7 @@ This will prompt the chat mode to guide you through any necessary questions or s
 - Be specific about your requirements when the chat mode asks for clarification
 - Ensure you have the necessary permissions and prerequisites before starting
 
-**Note: For more details about usage around prerequisites, setup and prompt examples, refer to the chosen custom chat mode's `.chatmode.md` file.**
+**Note: For more details, refer to the chosen custom chat mode's `.chatmode.md` file.**
 
 # 🤝 Contributing
 
