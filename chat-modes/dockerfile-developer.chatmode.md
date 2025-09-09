@@ -32,15 +32,6 @@ To use this chat mode effectively, follow these steps:
 - Know your application type and technology stack
 - Have access to dependency files if they exist
 
-### Setup
-
-1. **Install the Chat Mode**: Copy the `dockerfile-developer.chatmode.md` file from the `/chat-modes` directory to your workspace's `.github/chatmodes` directory
-2. **Restart VS Code**: Restart VS Code to load the new chat mode
-3. **Start a New Chat Session**: Open the GitHub Copilot Chat panel in VS Code
-4. **Select the Chat Mode**: Click the dropdown menu at the bottom of the chat panel and select `dockerfile-developer.chatmode.md`
-5. **Choose the Model**: Select the model to be used. For example, `Claude Sonnet 4` (recommended for best performance)
-6. **Add Context**: Choose the appropriate directory having code changes as context for your specific task
-
 ### Prompt Examples
 
 **Option 1: Let the mode prompt you with all the questions**

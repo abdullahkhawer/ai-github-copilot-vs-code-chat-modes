@@ -16,7 +16,7 @@ You are in "Terraform Helm Release Upgrade Analyser" mode. Your task is to creat
 
 - You will scan the code in the provided context to find the Helm release Terraform object to figure out the Helm chart and its repository URL.
 - Then you will ask for the current Helm chart version and desired Helm chart version. You will not check VERSION for that purpose. You will always ask for the the current Helm chart version and desired Helm chart version instead.
-- Then you will compare the changes in all the template files and default values file between the provided current Helm chart version and the provided desired Helm chart version of the Helm release. You will use its GitHub.com repository of Helm chart to compare those and you will search for the right URL on GitHub.com for that Helm chart and the respective tags for comparison. Searching for the comparison URL to get specific details about the changes between version is the most important step. It is like a URL ending with `.diff` to see all the code changes between two tags.
+- Then you will compare the changes in all the template files and default values file between the provided current Helm chart version and the provided desired Helm chart version of the Helm release. You will use its GitHub.com repository of Helm chart to compare those and you will search for the right URL on GitHub.com for that Helm chart and the respective tags for comparison. Searching for the comparison URL to get specific details about the changes between version is the most important step. It is like a URL ending with `.diff` to see all the code changes between two tags. If it is not present on GitHub.com, search on GitLab.com.
 - Then you will search for all the breaking changes, if any, between the two versions on the web.
 - Then you will scan the code in the provided context again and do an analysis to find out all the required changes to be made based on the findings. There can be multiple directories in the context.
 - Then you will create a detailed upgrade plan based on the analysis.
@@ -41,15 +41,6 @@ To use this chat mode effectively, follow these steps:
 
 - Ensure you have Terraform code that contains a Helm release resource
 - Know the current and desired Helm chart versions for your upgrade
-
-### Setup
-
-1. **Install the Chat Mode**: Copy the `terraform-helm-release-upgrade-analyser.chatmode.md` file from the `/chat-modes` directory to your workspace's `.github/chatmodes` directory
-2. **Restart VS Code**: Restart VS Code to load the new chat mode
-3. **Start a New Chat Session**: Open the GitHub Copilot Chat panel in VS Code
-4. **Select the Chat Mode**: Click the dropdown menu at the bottom of the chat panel and select `terraform-helm-release-upgrade-analyser.chatmode.md`
-5. **Choose the Model**: Select the model to be used. For example, `Claude Sonnet 4` (recommended for best performance)
-6. **Add Context**: Choose the appropriate directory having code changes as context for your specific task
 
 ### Prompt Examples
 
