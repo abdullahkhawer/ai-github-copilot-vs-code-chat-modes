@@ -17,23 +17,40 @@ Custom chat modes allow you to modify GitHub Copilot's behavior in VS Code. Each
 
 | Title | Description | Category |
 | ----- | ----------- | -------- |
-| [Terraform Helm Release Upgrade Analyser](chat-modes/terraform-helm-release-upgrade-analyser.chatmode.md) | Creates a detailed upgrade plan for a Helm release created via Terraform by analysing the configuration differences between the current and desired Helm chart versions and any breaking changes | Infrastructure & DevOps |
-| [Dockerfile Developer](chat-modes/dockerfile-developer.chatmode.md) | Develops optimized, secure, and best-practice Dockerfiles based on user requirements and application context | Infrastructure & DevOps |
-| [Conversation to Chat Mode](chat-modes/conversation-to-chat-mode.chatmode.md) | Creates a custom chat mode file based on a conversational interface where users describe their specific task requirements and guidelines | Development Tools |
+| [Code Reviewer](chat-modes/code-reviewer.chatmode.md) | Analyzes code changes between two branches to perform comprehensive code reviews and suggest improvements for security, performance, and code quality | Development Tools |
 | [Code Commit Assistant](chat-modes/code-commit-assistant.chatmode.md) | Analyzes code changes, prepares conventional commit messages, and commits to a new branch with proper Git workflow automation | Development Tools |
+| [Dockerfile Developer](chat-modes/dockerfile-developer.chatmode.md) | Develops optimized, secure, and best-practice Dockerfiles based on user requirements and application context | Infrastructure & DevOps |
+| [Terraform Helm Release Upgrade Analyser](chat-modes/terraform-helm-release-upgrade-analyser.chatmode.md) | Creates a detailed upgrade plan for a Helm release created via Terraform by analysing the configuration differences between the current and desired Helm chart versions and any breaking changes | Infrastructure & DevOps |
+| [Conversation to Chat Mode](chat-modes/conversation-to-chat-mode.chatmode.md) | Creates a custom chat mode file based on a conversational interface where users describe their specific task requirements and guidelines | Development Tools |
 
-## Terraform Helm Release Upgrade Analyser
+## Code Reviewer
 
-This chat mode helps you safely upgrade Helm releases managed by Terraform by:
+This chat mode helps you perform comprehensive code reviews by analyzing changes between Git branches and providing detailed feedback by:
 
-- **Automatic Detection**: Scans your Terraform code to identify Helm release resources
-- **Version Comparison**: Compares template files and default values between chart versions
-- **Breaking Change Analysis**: Identifies potential breaking changes and compatibility issues
-- **Detailed Planning**: Creates comprehensive upgrade plans with step-by-step instructions
+- **Branch Comparison**: Analyzes code differences between source and target branches using Git diff
+- **Security Analysis**: Checks for secrets exposure, SQL injection vulnerabilities, and security best practices
+- **Performance Review**: Identifies inefficient algorithms, memory leaks, and unnecessary computations
+- **Code Quality**: Looks for code smells, duplicate code, complex functions, and formatting issues
+- **Best Practices**: Verifies proper error handling, logging, and documentation standards
+- **Targeted Suggestions**: Provides specific code snippets with improvements, file paths, and line numbers
 
 ### Demo
 
-![Demo](demos/terraform-helm-release-upgrade-analyser.chatmode.gif)
+![Demo](demos/code-reviewer.chatmode.gif)
+
+## Code Commit Assistant
+
+This chat mode helps you automate your Git workflow by analyzing code changes and creating proper commits by:
+
+- **Automatic Code Analysis**: Analyzes all uncommitted changes to understand the scope and impact of modifications
+- **Conventional Commits**: Automatically determines the appropriate conventional commit type (feat, fix, docs, etc.) based on code changes
+- **Branch Management**: Creates new branches for your changes following Git best practices
+- **Quality Checks**: Optionally runs pre-commit hooks and Terraform formatting before committing
+- **Automated Workflow**: Handles the complete Git workflow from branch creation to pushing changes
+
+### Demo
+
+![Demo](demos/code-commit-assistant.chatmode.gif)
 
 ## Dockerfile Developer
 
@@ -49,6 +66,19 @@ This chat mode helps you create optimized, secure, and production-ready Dockerfi
 
 ![Demo](demos/dockerfile-developer.chatmode.gif)
 
+## Terraform Helm Release Upgrade Analyser
+
+This chat mode helps you safely upgrade Helm releases managed by Terraform by:
+
+- **Automatic Detection**: Scans your Terraform code to identify Helm release resources
+- **Version Comparison**: Compares template files and default values between chart versions
+- **Breaking Change Analysis**: Identifies potential breaking changes and compatibility issues
+- **Detailed Planning**: Creates comprehensive upgrade plans with step-by-step instructions
+
+### Demo
+
+![Demo](demos/terraform-helm-release-upgrade-analyser.chatmode.gif)
+
 ## Conversation to Chat Mode
 
 This meta chat mode helps you create new custom chat modes through a guided conversation by:
@@ -61,20 +91,6 @@ This meta chat mode helps you create new custom chat modes through a guided conv
 ### Demo
 
 ![Demo](demos/conversation-to-chat-mode.chatmode.gif)
-
-## Code Commit Assistant
-
-This chat mode helps you automate your Git workflow by analyzing code changes and creating proper commits by:
-
-- **Automatic Code Analysis**: Analyzes all uncommitted changes to understand the scope and impact of modifications
-- **Conventional Commits**: Automatically determines the appropriate conventional commit type (feat, fix, docs, etc.) based on code changes
-- **Branch Management**: Creates new branches for your changes following Git best practices
-- **Quality Checks**: Optionally runs pre-commit hooks and Terraform formatting before committing
-- **Automated Workflow**: Handles the complete Git workflow from branch creation to pushing changes
-
-### Demo
-
-![Demo](demos/code-commit-assistant.chatmode.gif)
 
 # 📖 How to Use Chat Modes
 
