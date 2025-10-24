@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2025-10-24
+
+### 🚀 Features
+
+- Add code-reviewer chat mode, update README.md accordingly and create slower demos in gif format.
+
 ## [1.2.0] - 2025-09-09
 
 ### 🚀 Features
